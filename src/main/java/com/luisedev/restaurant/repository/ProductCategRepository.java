@@ -1,7 +1,6 @@
 package com.luisedev.restaurant.repository;
 
-import com.luisedev.restaurant.entitys.ProductCateg;
-import lombok.extern.java.Log;
+import com.luisedev.restaurant.model.ProductCateg;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

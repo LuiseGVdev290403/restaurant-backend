@@ -1,7 +1,16 @@
-package com.luisedev.restaurant.entitys;
+package com.luisedev.restaurant.model;
 
 import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
+
+@Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
 @Entity
 @Table(name = "user_rol")
 public class UserRol {
