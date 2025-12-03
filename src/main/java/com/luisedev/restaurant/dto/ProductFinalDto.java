@@ -8,4 +8,10 @@ import lombok.*;
 @AllArgsConstructor
 @Builder
 public class ProductFinalDto {
+
+    private Long id;
+
+    private ProductDto productDto;
+    private ProductTagDto productTagDto;
+    private double price;
 }

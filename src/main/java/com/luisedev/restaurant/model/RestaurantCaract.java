@@ -21,9 +21,16 @@ public class RestaurantCaract {
     @JoinColumn(name="restaurant_id", referencedColumnName="id")
     private Restaurant idRestaurant;
 
-    private int floor_qty;
-    private int table_qty;
-    private int chair_table;
+    @Column(name = "floor_qty")
+    private int floorQty;
+
+    @Column(name = "table_qty")
+    private int tableQty;
+
+    @Column(name = "chair_table")
+    private int chairTable;
+
+    @Column(name = "qr_code")
     private String qr_code;
 
 }

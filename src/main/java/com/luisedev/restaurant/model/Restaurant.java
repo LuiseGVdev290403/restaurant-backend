@@ -24,7 +24,7 @@ public class Restaurant {
     @Column(unique = true, length = 50)
     private String ruc;
 
-    private String ubicacion;
-
-    private String foto;
+    private String district;
+    private String street;
+    private String logoPhoto;
 }
