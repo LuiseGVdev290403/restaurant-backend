@@ -11,7 +11,7 @@ import lombok.*;
 public class RestaurantCaractDto {
     private Long id;
 
-    private RestaurantDto restaurantDto;
+
 
     private int floorQty;
     private int tableQty;

@@ -27,4 +27,8 @@ public class Restaurant {
     private String district;
     private String street;
     private String logoPhoto;
+
+    @OneToOne
+    @JoinColumn(name="restaurant_caract_id", referencedColumnName="id")
+    private RestaurantCaract idCaractRestaurant;
 }

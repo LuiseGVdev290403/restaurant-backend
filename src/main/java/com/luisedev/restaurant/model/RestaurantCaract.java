@@ -17,10 +17,6 @@ public class RestaurantCaract {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @OneToOne
-    @JoinColumn(name="restaurant_id", referencedColumnName="id")
-    private Restaurant idRestaurant;
-
     @Column(name = "floor_qty")
     private int floorQty;
 

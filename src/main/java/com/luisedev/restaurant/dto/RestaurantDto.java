@@ -17,4 +17,6 @@ public class RestaurantDto {
     private String street;
     private String logoPhoto;
 
+    private RestaurantCaractDto caractDto;
+
 }
