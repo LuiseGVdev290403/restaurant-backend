@@ -15,4 +15,5 @@ public class UserDto {
     private String dni;
     private String direction;
     private String district;
+    private RolDto rolDto;
 }

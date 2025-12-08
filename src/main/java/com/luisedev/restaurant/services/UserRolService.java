@@ -1,4 +1,7 @@
 package com.luisedev.restaurant.services;
 
-public class UserRolService implements IUserRolService{
+import org.springframework.stereotype.Service;
+
+@Service
+public class UserRolService {
 }
