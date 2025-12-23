@@ -14,5 +14,4 @@ public class ProductCategDto {
 
     private Long id;
     private String name;
-    private List<ProductDto> productDtoList;
 }

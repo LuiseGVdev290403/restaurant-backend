@@ -1,7 +1,0 @@
-package com.luisedev.restaurant.services;
-
-import org.springframework.stereotype.Service;
-
-@Service
-public class UserRolService {
-}
