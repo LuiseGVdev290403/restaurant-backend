@@ -7,7 +7,27 @@ import com.luisedev.restaurant.model.Orders;
 import com.luisedev.restaurant.model.Product;
 import com.luisedev.restaurant.model.Restaurant;
 
-public class Mapper {
+
+public class MapperRestaurant {
+
+    public static RestaurantDto restaurantDto (Restaurant r) {
+        if ( r == null) return null;
+        return RestaurantDto.builder()
+                .id(r.getId())
+                .ruc(r.getRuc())
+                .caractDto(RestaurantCaractDto.builder()
+                        .id(r.getIdCaractRestaurant().getId())
+                        .chairTable(r.getIdCaractRestaurant().getChairTable())
+                        .qrCode(r.getIdCaractRestaurant().getQr_code())
+                        .floorQty(r.getIdCaractRestaurant().getFloorQty())
+                        .tableQty(r.getIdCaractRestaurant().getTableQty())
+                        .build())
+                .district(r.getDistrict())
+                .logoPhoto(r.getLogoPhoto())
+                .street(r.getStreet())
+                .build();
+    }
+
 
     // mapea productDto
     public static ProductDto toDto(Product p) {
@@ -33,24 +53,6 @@ public class Mapper {
                                     .build())
                             .build();
                 }).toList())
-                .build();
-    }
-
-    public static RestaurantDto restaurantDto (Restaurant r) {
-        if ( r == null) return null;
-        return RestaurantDto.builder()
-                .id(r.getId())
-                .ruc(r.getRuc())
-                .caractDto(RestaurantCaractDto.builder()
-                        .id(r.getIdCaractRestaurant().getId())
-                        .chairTable(r.getIdCaractRestaurant().getChairTable())
-                        .qrCode(r.getIdCaractRestaurant().getQr_code())
-                        .floorQty(r.getIdCaractRestaurant().getFloorQty())
-                        .tableQty(r.getIdCaractRestaurant().getTableQty())
-                        .build())
-                .district(r.getDistrict())
-                .logoPhoto(r.getLogoPhoto())
-                .street(r.getStreet())
                 .build();
     }
 
