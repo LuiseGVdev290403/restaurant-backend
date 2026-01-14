@@ -6,8 +6,9 @@ import com.luisedev.restaurant.model.OrderDetail;
 import com.luisedev.restaurant.model.Orders;
 import com.luisedev.restaurant.model.Product;
 import com.luisedev.restaurant.model.Restaurant;
+import lombok.Builder;
 
-
+@Builder
 public class MapperRestaurant {
 
     public static RestaurantDto restaurantDto (Restaurant r) {
