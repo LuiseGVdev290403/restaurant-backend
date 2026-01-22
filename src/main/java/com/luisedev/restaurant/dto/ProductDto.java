@@ -16,4 +16,5 @@ public class ProductDto {
     private String description;
     private List<ProductCategDto> productCategDtoList;
     private List<ProductFinalDto> productFinalDtoList;
+    private List<ProductTagDto> productTagDtoList;
 }

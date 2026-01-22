@@ -1,10 +1,7 @@
 package com.luisedev.restaurant.model;
 
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
 import java.util.List;
 
@@ -14,6 +11,7 @@ import java.util.List;
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
+@Builder
 @Table(name = "product")
 public class Product {
     @Id
@@ -33,5 +31,8 @@ public class Product {
 
     @OneToMany(mappedBy = "product")
     private List<ProductFinal> products;
+
+
+
 
 }

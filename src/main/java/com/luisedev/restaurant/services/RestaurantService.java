@@ -71,7 +71,6 @@ public class RestaurantService implements IRestaurantService{
 
     }
 
-
     @Override
     public Response createRestaurant(RestaurantDto restaurantDto) {
         try {
